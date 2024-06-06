@@ -72,6 +72,7 @@ zstyle ':fzf-tab:complete:__zoxide_z:*' fzf-preview 'ls --color $realpath'
 bindkey -e
 bindkey '^p' history-search-backwards
 bindkey '^n' history-search-forward
+bindkey '^[[3~' delete-char
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
@@ -83,7 +84,8 @@ alias open='gio open'
 alias grep='grep --color=auto'
 alias logout='gnome-session-quit'
 alias ta='attach-session -t'
+alias z='zoxide add'
 
 # Shell integration
-eval "${fzf --zsh}"
+eval "$(fzf --zsh)"
 eval "$(zoxide init --cmd cd zsh)"
