@@ -85,6 +85,7 @@ alias grep='grep --color=auto'
 alias logout='gnome-session-quit'
 alias ta='attach-session -t'
 alias z='zoxide add'
+alias shut="shutdown -h now"
 
 # Shell integration
 eval "$(fzf --zsh)"
