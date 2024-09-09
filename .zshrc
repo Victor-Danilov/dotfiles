@@ -86,6 +86,9 @@ alias logout='gnome-session-quit'
 alias ta='attach-session -t'
 alias z='zoxide add'
 alias shut="shutdown -h now"
+alias anisette='sudo docker run -d -v lib_cache:/opt/lib/ --restart=always -p 6969:6969 --name anisette dadoum/anisette-server:latest'
+alias expanisette='export ALTSERVER_ANISETTE_SERVER=http://127.0.0.1:6969'
+alias expusbmux='export USBMUXD_SOCKET_ADDRESS=127.0.0.1:27015'
 
 # Shell integration
 eval "$(fzf --zsh)"
