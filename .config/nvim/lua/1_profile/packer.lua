@@ -39,6 +39,7 @@ return require('packer').startup(function(use)
 	  }
   }
   use('preservim/nerdcommenter')
+  use ('nvim-tree/nvim-web-devicons')
   use {
 	  "SmiteshP/nvim-navbuddy",
 	  requires = {
@@ -49,4 +50,12 @@ return require('packer').startup(function(use)
 		  "nvim-telescope/telescope.nvim" -- Optional
 	  }
   }
+  use{
+      "folke/trouble.nvim",
+      requires ={
+          "nvim-treesitter",
+          "nvim-tree/nvim-web-devicons"
+      }
+  }
+  vim.cmd('colorscheme rose-pine')
   end)

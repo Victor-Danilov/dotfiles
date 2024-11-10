@@ -78,6 +78,7 @@ bindkey '^[[3~' delete-char
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
 # Aliases
+alias code='code'
 alias ls='ls --color=auto'
 alias ll='ls -al'
 alias open='gio open'
@@ -93,3 +94,8 @@ alias expusbmux='export USBMUXD_SOCKET_ADDRESS=127.0.0.1:27015'
 # Shell integration
 eval "$(fzf --zsh)"
 eval "$(zoxide init --cmd cd zsh)"
+# export PATH="$PATH:/home/victor/.dotnet/tools"
+export PATH="$PATH:/usr/share/dotnet"
+export PATH="$PATH:/opt/mssql-tools/bin"
+export PATH="$PATH:/home/victor/.dotnet/tools"
+export PATH="$PATH:/usr/bin"
